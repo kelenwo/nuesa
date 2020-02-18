@@ -1,0 +1,318 @@
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+
+    ========================================================  */
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #fff !important;
+}
+
+.text-green {
+  color: #005E5A;
+  font-family: 'Open Sans',sans-serif;
+}
+/*=====================================
+  HEADER LINE STYLES
+    ===================================*/
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+    #faculty-sec .header-line {
+        color: #fff;
+    }
+
+.icon-bx-xl i,
+.icon-bx-lg i,
+.icon-bx-md i,
+.icon-bx-sm i,
+.icon-bx-xs i {
+    vertical-align: middle;
+}
+.icon-bx-xl i {
+    font-size: 80px;
+}
+.icon-bx-lg i {
+    font-size: 60px;
+}
+.icon-bx-md i {
+    font-size: 45px;
+}
+.icon-bx-sm i {
+    font-size: 30px;
+}
+.icon-bx-xs i {
+    font-size: 20px;
+}
+.icon-bx-xl img,
+.icon-bx-lg img,
+.icon-bx-md img,
+.icon-bx-sm img,
+.icon-bx-xs img {
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto;
+}
+.icon-xl,
+.icon-lg,
+.icon-md,
+.icon-sm,
+.icon-xs {
+    display: inline-block;
+    text-align: center;
+}
+.icon-xl {
+    width: 100px;
+}
+.icon-lg {
+    width: 80px;
+}
+.icon-md {
+    width: 60px;
+}
+.icon-sm {
+    width: 40px;
+}
+.icon-xs {
+    width: 30px;
+}
+.icon-xl i,
+.icon-lg i,
+.icon-md i,
+.icon-sm i,
+.icon-xs i {
+    vertical-align: middle;
+}
+.icon-xl i {
+    font-size: 80px;
+}
+.icon-lg i {
+    font-size: 60px;
+}
+.icon-md i {
+    font-size: 45px;
+}
+.icon-sm i {
+    font-size: 30px;
+}
+.icon-xs i {
+    font-size: 20px;
+}
+.icon-xl img,
+.icon-lg img,
+.icon-md img,
+.icon-sm img,
+.icon-xs img {
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto;
+}
+.icon-xl img {
+    height: 80px;
+}
+.icon-lg img {
+    height: 70px;
+}
+.icon-md img {
+    height: 50px;
+}
+.icon-sm img {
+    height: 30px;
+}
+.icon-xs img {
+    height: 20px;
+}
+/*== place icon with box ==*/
+
+.icon-bx-wraper {
+    position: relative;
+}
+.icon-bx-wraper .dez-tilte {
+    margin-top: 0;
+}
+.icon-bx-wraper .after-titile-line {
+    margin-bottom: 10px;
+}
+.icon-bx-wraper p:last-child {
+    margin: 0;
+}
+.icon-content {
+    overflow: hidden;
+}
+/* icon box left aligh */
+
+.icon-bx-wraper.left .icon-bx-xl,
+.icon-bx-wraper.left .icon-bx-lg,
+.icon-bx-wraper.left .icon-bx-md,
+.icon-bx-wraper.left .icon-bx-sm,
+.icon-bx-wraper.left .icon-bx-xs {
+    float: left;
+    margin-right: 20px;
+}
+
+
+.icon-bx-wraper.left .icon-xl,
+.icon-bx-wraper.left .icon-lg,
+.icon-bx-wraper.left .icon-md,
+.icon-bx-wraper.left .icon-sm,
+.icon-bx-wraper.left .icon-xs {
+    float: left;
+    margin-right: 10px;
+}
+/* icon box right aligh */
+
+.icon-bx-wraper.right {
+    text-align: right;
+}
+.icon-bx-wraper.center {
+    text-align: center;
+}
+[class*="icon-bx-"][class*="bg-"] a {
+    color: #fff;
+}
+[class*="icon-bx-"].bg-white a {
+    color: inherit;
+}
+[class*="icon-bx-"][class*="border-"] {
+    display: table;
+    line-height: normal;
+    margin-left: auto;
+    margin-right: auto;
+}
+[class*="icon-bx-"][class*="border-"] .icon-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.icon-bx-wraper.bx-style-1,
+.icon-bx-wraper.bx-style-2 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+}
+.icon-bx-wraper.bx-style-2.center [class*="icon-bx-"],
+.icon-bx-wraper.bx-style-2.left [class*="icon-bx-"],
+.icon-bx-wraper.bx-style-2.right [class*="icon-bx-"] {
+    position: absolute;
+}
+.icon-bx-wraper.bx-style-2.center [class*="icon-bx-"] {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon-bx-wraper.bx-style-2.center .icon-bx-xl {
+    margin-left: -75px;
+}
+.icon-bx-wraper.bx-style-2.center .icon-bx-lg {
+    margin-left: -60px;
+}
+.icon-bx-wraper.bx-style-2.center .icon-bx-md {
+    margin-left: -50px;
+}
+.icon-bx-wraper.bx-style-2.center .icon-bx-sm {
+    margin-left: -40px;
+}
+.icon-bx-wraper.bx-style-2.center .icon-bx-xs {
+    margin-left: -20px;
+}
+.icon-bx-wraper.bx-style-2.left [class*="icon-bx-"] {
+    position: absolute;
+    top: auto;
+    left: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.icon-bx-wraper.bx-style-2.right [class*="icon-bx-"] {
+    position: absolute;
+    top: auto;
+    right: 0;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+.img-bg {
+  background-image: url('../img/bg1.png');
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: right 5% center;
+  background-attachment: fixed;
+}
+h1,
+.h2,
+h3,
+.h4,
+h5,
+h6 {
+    font-family: "Montserrat Black",sans-serif;
+}
+
+.h1 {
+    font-size: 32px;
+    line-height: 30px;
+}
+.h2 {
+    font-size: 24px;
+    line-height: 38px;
+}
+.h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+.h4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+.h5 {
+    font-size: 20px;
+    line-height: 22px;
+}
+.h6 {
+    font-size: 14px;
+    line-height: 18px;
+}
+.h6-s {
+  font-family: Montserrat;
+  color: deep green !important;
+  font-size: 24px;
+}
+.h6-ss {
+  color: #000;
+  font-size: 26px;
+}
+.text-primary {
+  color: orange;
+}
+.bold {
+  font-weight: 900;
+}
+.img-logo {
+  width: 110px;
+  height: 110px;
+}
+.rgba {
+  color: orange;
+}
+.rgbaa {
+  color: rgba(210,64,67,1);
+}
+.white {
+  color: white;
+  font-weight: bolder;
+}
