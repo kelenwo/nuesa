@@ -17,7 +17,7 @@
                <div class="icon-bx-wraper bx-style-1 p-tb15 p-lr10">
                    <div class="box align-center">
                      <div class="box-square">
-               <img  id="img" src="<?php echo base_url();?>uploads/<?php echo $passport;?>">
+               <img  id="img" src="uploads/<?php echo $passport;?>">
        </div></div><div class="text-center"> <h5 class="h5 bold text-primary">
                            <?php echo $name;?>
                          </h5>

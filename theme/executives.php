@@ -17,6 +17,6 @@
      </div>
 <script>
 $(document).ready(function(){
-$('#row').load('<?php echo base_url();?>faculty/executives/display');
+$('#row').load('faculty/executives/display');
 });
 </script>

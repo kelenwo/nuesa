@@ -116,7 +116,7 @@ $('#submit').click(function() {
 $('#loading').show();
             e.preventDefault();
                  $.ajax({
-                     url:'<?php echo base_url();?>admin/save_executive',
+                     url:'admin/save_executive',
                      type:"post",
                      data:new FormData(this),
                      processData:false,

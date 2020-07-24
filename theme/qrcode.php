@@ -1,9 +1,9 @@
 
-    <script src="<?php echo base_url(); ?>theme/assets/js/jquery-1.10.2.js"></script>
+    <script src="theme/assets/js/jquery-1.10.2.js"></script>
     <!--  Core Bootstrap Script -->
-    <script src="<?php echo base_url(); ?>theme/assets/js/bootstrap.js"></script>
+    <script src="theme/assets/js/bootstrap.js"></script>
     <!--  Flexslider Scripts -->
-         <script src="<?php echo base_url(); ?>theme/assets/js/qrcode.min.js"></script>
+         <script src="theme/assets/js/qrcode.min.js"></script>
 
         <div class="icon-bx-wraper bx-style-1 p-tb15 p-lr10 center">
             <div class="m-b5" style="margin-left:10px;" id="qrcode">

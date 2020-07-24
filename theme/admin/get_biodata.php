@@ -46,7 +46,7 @@
          <hr/>
            <div class="box spot">
              <div class="overlay">
-       <label for="passport"><img  id="img" src="<?php echo base_url();?>uploads/{passport}">
+       <label for="passport"><img  id="img" src="uploads/{passport}">
 </label><input id="passport" type="file" name="userfile" style="display:none;">
 </div></div>
 <input type="hidden" name="id" value="{id}">
@@ -79,7 +79,7 @@
           //$('#loading').show();
                     e.preventDefault();
                          $.ajax({
-                             url:'<?php echo base_url();?>admin/update_executive',
+                             url:'admin/update_executive',
                              type:"post",
                              data:new FormData(this),
                              processData:false,

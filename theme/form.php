@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link href="<?php echo base_url();?>theme/assets/bootstrap.css" rel="stylesheet" />
-      <link href="<?php echo base_url();?>theme/assets/css/fonts.css" rel="stylesheet" />
+    <link href="theme/assets/bootstrap.css" rel="stylesheet" />
+      <link href="theme/assets/css/fonts.css" rel="stylesheet" />
 
 </head>
   <div id="content">

@@ -4,30 +4,30 @@
     <meta charset="utf-8">
     <title> {title}</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>/favicon_16.ico"/>
-    <link rel="bookmark" href="<?php echo base_url(); ?>/favicon_16.ico"/>
+    <link rel="shortcut icon" href="/favicon_16.ico"/>
+    <link rel="bookmark" href="/favicon_16.ico"/>
     <!-- site css -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>theme/admin/assets/css/site.min.css">
-        <link href="<?php echo base_url(); ?>theme/admin/assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="theme/admin/assets/css/site.min.css">
+        <link href="theme/admin/assets/css/style.css" rel="stylesheet" />
 
   <!-- Google	Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
     <!--  Jquery Core Script -->
-    <script src="<?php echo base_url(); ?>theme/assets/jquery.min.js"></script>
+    <script src="theme/assets/jquery.min.js"></script>
     <!--  Core Bootstrap Script -->
-    <script src="<?php echo base_url(); ?>theme/admin/assets/js/bootstrap.js"></script>
+    <script src="theme/admin/assets/js/bootstrap.js"></script>
     <!--  Flexslider Scripts -->
-         <script src="<?php echo base_url(); ?>theme/admin/assets/js/jquery.flexslider.js"></script>
+         <script src="theme/admin/assets/js/jquery.flexslider.js"></script>
      <!--  Scrolling Reveal Script -->
-    <script src="<?php echo base_url(); ?>theme/admin/assets/js/scrollReveal.js"></script>
+    <script src="theme/admin/assets/js/scrollReveal.js"></script>
     <!--  Scroll Scripts -->
-    <script src="<?php echo base_url(); ?>theme/admin/assets/js/jquery.easing.min.js"></script>
+    <script src="theme/admin/assets/js/jquery.easing.min.js"></script>
     <!--  Custom Scripts -->
-         <script src="<?php echo base_url(); ?>theme/admin/assets/js/custom.js"></script>
+         <script src="theme/admin/assets/js/custom.js"></script>
         <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
      <!--[endif] -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>style/dist/js/site.min.js"></script>
+    <script type="text/javascript" src="style/dist/js/site.min.js"></script>
   </head>
   <body>
     <?php //if(!isset($this->session->user_name)) {
@@ -64,18 +64,18 @@
         <div class="row row-offcanvas row-offcanvas-left">
           <div class="col-xs-6 col-sm-4 sidebar-offcanvas" role="navigation">
             <ul class="list-group panel">
-                  <li><a class="list-group-item" id="index-tab" href="<?php echo base_url();?>admin">
+                  <li><a class="list-group-item" id="index-tab" href="admin">
                   <i class="glyphicon glyphicon-certificate" ></i>
                 <br>Dashboard </a></li>
-              <li><a class="list-group-item" id="courses-tab" href="<?php echo base_url();?>admin/add_executives"><i class="glyphicon glyphicon-list-alt"></i>
+              <li><a class="list-group-item" id="courses-tab" href="admin/add_executives"><i class="glyphicon glyphicon-list-alt"></i>
             <br>Add Executives</a></li>
-            <li><a class="list-group-item" id="courses-tab" href="<?php echo base_url();?>admin/add_session"><i class="glyphicon glyphicon-list-alt"></i>
+            <li><a class="list-group-item" id="courses-tab" href="admin/add_session"><i class="glyphicon glyphicon-list-alt"></i>
           <br>Add Session</a></li>
-            <li><a class="list-group-item" id="add-tab" href="<?php echo base_url();?>admin/edit_executive"><i class="glyphicon glyphicon-certificate">
+            <li><a class="list-group-item" id="add-tab" href="admin/edit_executive"><i class="glyphicon glyphicon-certificate">
             </i><br>Edit Executive</a></li>
-            <li><a class="list-group-item" id="settings-tab" href="<?php echo base_url();?>admin/settings">
+            <li><a class="list-group-item" id="settings-tab" href="admin/settings">
               <i class="fa fa-cogs"></i><br>Site Settings</a></li>
-                <li><a class="list-group-item" id="portal-tab" href="<?php echo base_url();?>admin/print_records"><i class="glyphicon glyphicon-indent-left"></i>
+                <li><a class="list-group-item" id="portal-tab" href="admin/print_records"><i class="glyphicon glyphicon-indent-left"></i>
                   <br>Print Records</a></li>
 
               </ul>

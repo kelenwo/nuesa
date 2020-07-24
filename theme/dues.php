@@ -143,7 +143,7 @@
    <span class="input-group-addon">
        <i class="fa fa-pencil"></i>
    </span>
-     <input type="text" name="payerName" required=""   class="form-control" id="reg" placeholder="Registration Number">
+     <input type="text" id="payerName" name="payerName" required=""   class="form-control" id="reg" placeholder="Registration Number">
  </div></div>
    <div class="form-group">
        <label for="email">Email address</label>
@@ -162,22 +162,13 @@
      <input type="text" name="payerPhone" required="" value="<?php echo set_value('mobile'); ?>" class="form-control" id="mobile" placeholder="Mobile Number">
  </div></div>
  <div class="form-group">
-   <label class="control-label">Department</label>
+   <label class="control-label">Department <i id="loadingdept" class="fa fa-gear fa-spin"></i></label>
    <div class="input-group">
  <span class="input-group-addon">
      <i class="fa fa-th-list"></i>
  </span>
-       <select name="payerDepartment"  class="form-control input-sm">
-           <option >- Department -</option>
-           <option value="Agric Engineering">Agric Engineering</option>
-           <option value="Chemical Engineering">Chemical Engineering</option>
-           <option value="Civil Engineering">Civil Engineering</option>
-           <option value="Computer Engineering">Computer Engineering</option>
-           <option value="Elect/Elect Engineering">Elect/Elect Engineering</option>
-           <option value="Food Engineering">Food Engineering</option>
-           <option value="Mechanical Engineering">Mechanical Engineering</option>
-           <option value="Petroleum Engineering">Petroleum Engineering</option>
-       </select>
+ <input disabled type="text"  required="" class="form-control" id="depts">
+ <input type="hidden" name="department" required="" class="form-control" id="dept">
    </div></div>
    <div class="form-group">
      <label class="control-label">Level</label>
@@ -242,12 +233,14 @@ $img = base_url()."theme/assets/img/loading.gif";
 ?>
 <script>
 $(document).ready(function() {
+//Hide loading icons
   $('#load').hide();
   $('#loader').hide();
   $('#loading').hide();
   $('#response').hide();
   $('#loadingamount').hide();
-  $('#rrr').html
+    $('#loadingdept').hide();
+
 //lOAD THE AMOUNT BASED ON LEVEL
 var level = $('#level').val();
 $('#level').on('change',function() {
@@ -264,15 +257,37 @@ $('#level').on('change',function() {
   });
 });
 
+//Load Departments
+$('#payerName').on('keyup',function() {
+  $('#loadingdept').show();
+  $.ajax({
+  url: "<?php echo base_url()."dues/get_dept";?>",
+  data:$('#dues').serialize(),
+  type: "POST",
+  success:function(data){
+    $('#loadingdept').hide();
+    if(data=="0") {
+      $("#depts").attr('value','Invalid Department');
+      $("#dept").attr('value','Invalid Department');
+      $('#paydues').attr('disabled','disabled');
+      $("dept").css("background-color", "pink");
+    }
+    else {
+    $("#depts").attr('value',data);
+    $("#dept").attr('value',data);
+      $("#paydues").removeAttr('disabled');
+  }
+  }
+  });
+});
+//End Load Departments
+
+//Cancel button
   $('#cancel').click(function() {
   $('#dues')[0].reset();
   });
-$('input').change(function() {
-  var validated = true;
-  if(validated) {
-  $("#paydues").removeAttr('disabled');
-}
-});
+
+//Submit form
   $("#paydues").click(function() {
   $("#paydues").attr('disabled', 'disabled');
   $('#loading').show();
@@ -294,7 +309,7 @@ $('input').change(function() {
 
 });
 
-
+//Reprint tab
 $("#reprint").click(function() {
 $('#loader').show();
 $.ajax({
@@ -308,6 +323,7 @@ $("#err").html(data);
 }
 });
 
+//Retrieve reference id tab
 });
 $("#retrieve").click(function() {
 $('#load').show();
@@ -322,6 +338,7 @@ success:function(data){
 }
 });
 
+//Print reciept button
 });
 $(document).on("click","#print-rrr",function(){
 $("#invoice").submit();
